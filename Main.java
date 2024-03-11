@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        ATask.getAns();
+        A1Task.doTask();
+        B1Task.doTask();
     }
 }

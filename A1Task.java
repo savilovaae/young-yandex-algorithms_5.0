@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class ATask {
-    public static void getAns() {
+public class A1Task {
+    public static void doTask() {
         System.out.println(task());
     }
 
@@ -20,9 +20,7 @@ public class ATask {
         rstep = (rstart == vstart) ? vstep : mstep;
         lstart = Math.min(vstart, mstart);
         lstep = (lstart == vstart) ? vstep : mstep;
-
         // если есть пересечение ищем границы, если нет считаем независимое количество покрасок деревьев
-
         if (rstart - rstep <= lstart + lstep) {
             int left = Math.min(lstart - lstep, rstart - rstep);
             int right = Math.max(lstart + lstep, rstart + rstep);
